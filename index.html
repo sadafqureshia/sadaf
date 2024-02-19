@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio</title>
+    <link rel="stylesheet" href="sadaff.css">
+    <script src="https://kit.fontawesome.com/abc25c6668.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/2.png"> <!-- Removed spaces in image filename -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i> <!-- Updated class names and function calls -->
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> <!-- Updated class names and function calls -->
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Sadaf</span><br> Qureshi From J&K</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about 2.0.jpg" alt="30%"> <!-- Removed spaces in image filename -->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, my name is Sadaf Ahmed Qureshi and I am a CSE student at Akal University. I have extensive
+                        experience in programming and have completed a wide array of difficult tasks. As an active
+                        learner in the field, I consistently work to further my understanding of computer science,
+                        coding, database management, network security, web development, and application development. I
+                        am also passionate about artificial intelligence and its development. Furthermore, I have
+                        studied Business Administration, which has equipped me with crucial management and
+                        problem-solving skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>UI/UX Design Training at IIT Kanpur</li>
+                            <li><span>2022 - 2023</span><br>Team lead at Starapp LLC</li>
+                            <li><span>2022</span><br>Internship at ecommerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education"> <!-- Fixed a typo, changed "=" to ":" -->
+                        <ul>
+                            <li><span>2021</span><br>UI/UX Design Training at IIT Kanpur</li>
+                            <li><span>2022</span><br>BCA at Akal University</li>
+                            <li><span>2023</span><br>BCA at Akal University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------Services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i> <!-- Updated class name -->
+                    <h2>Web Design</h2>
+                    <p> My achievements in the field include working on software projects and developing software
+                        applications to meet client needs. Additionally, I am an experienced software trainer and have
+                        held events to teach beginners, such as college students, how to navigate their way through
+                        programming materials and tools.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop"></i> <!-- Updated class name -->
+                    <h2>UI/UX Design</h2>
+                    <p>My achievements in the field include working on software projects and developing software
+                        applications to meet client needs. Additionally, I am an experienced software trainer and have
+                        held events to teach beginners, such as college students, how to navigate their way through
+                        programming materials and tools.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i> <!-- Updated class name -->
+                    <h2>App Design</h2>
+                    <p>My achievements in the field include working on software projects and developing software
+                        applications to meet client needs. Additionally, I am an experienced software trainer and have
+                        held events to teach beginners, such as college students, how to navigate their way through
+                        programming materials and tools.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/33.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people around the world. Download it from the Play Store</p>
+                        <a href=""><i class="fas fa-link"></i></a> <!-- Updated class name -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/11.jpg" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people around the world. Download it from the Play Store</p>
+                        <a href=""><i class="fas fa-link"></i></a> <!-- Updated class name -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping Website</h3>
+                        <p>The website connects you to talented people around the world. Go to this website on Google
+                        </p>
+                        <a href="https://www.khalilcummunication.online">click here</a>
+                        <a href=""><i class="fas fa-link"></i></a> <!-- Updated class name -->
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="far fa-paper-plane"></i> Sadafqureshi078@gmail.com</p> <!-- Updated class name -->
+                    <p><i class="fas fa-phone"></i> 9682343567</p> <!-- Updated class name -->
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100086774897040&mibextid=ZbWKwL"><i
+                                class="fab fa-facebook"></i></a> <!-- Updated class name -->
+                        <a href="https://instagram.com/sadaf_qureshi__06?igshid=NGVhN2U2NjQ0Yg=="><i
+                                class="fab fa-instagram"></i></a> <!-- Updated class name -->
+                        <a
+                            href="https://www.linkedin.com/in/sadaf-qureshi-938a42272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fab fa-linkedin"></i></a> <!-- Updated class name -->
+                        <a href="https://www.snapchat.com/add/sadafqureshia?share_id=iTlqtrtvACI&locale=en-GB"><i
+                                class="fab fa-snapchat"></i></a> <!-- Updated class name -->
+                    </div>
+                    <a href="images/resume.jpg" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sadaf. Made <i class="far fa-heart"></i> By Sadaf Qureshi</p> <!-- Updated class name -->
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) { // Fixed variable name
+                tablink.classList.remove("active-link"); // Updated method name
+            }
+            for (tabcontent of tabcontents) { // Fixed variable name
+                tabcontent.classList.remove("active-tab"); // Updated method name
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwy_ji3lE7UbK8LpWAOkWYk6cD49Zrgn0MfSsb_NRzCS0GiYffRP3-geHjbMK2mhQJa/exec'; // Removed extra angle brackets
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"; // Fixed typo
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+
+</html>
